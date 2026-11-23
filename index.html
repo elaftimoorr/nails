@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna Nail Studio | استوديو فاخر للعناية بالأظافر</title>
+  <meta name="description" content="استوديو متخصص في العناية بالأظافر وتصميمها بأحدث الأساليب العصرية — مناكير، جل بوليش، تركيب أظافر، فن أظافر وتصاميم فاخرة.">
+  <meta name="theme-color" content="#6E2740">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%236E2740' d='M20.5 13.5A8.5 8.5 0 1 1 10.5 3.5a7 7 0 0 0 10 10z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== [ أيقونات SVG - Sprite ] ==================== -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 13.5A8.5 8.5 0 1 1 10.5 3.5a7 7 0 0 0 10 10z"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 4l1.7 4.6L18.5 10l-4.8 1.4L12 16l-1.7-4.6L5.5 10l4.8-1.4L12 4z"/><path d="M18.5 16.5l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7.7-2z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.3C7 16.9 4 13.6 4 10.2 4 7.7 6 5.8 8.4 5.8c1.5 0 2.8.8 3.6 2 .8-1.2 2.1-2 3.6-2C18 5.8 20 7.7 20 10.2c0 3.4-3 6.7-8 10.1z"/></symbol>
+    <symbol id="i-flower" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.8"/><circle cx="12" cy="7.4" r="2.1"/><circle cx="16.3" cy="10.3" r="2.1"/><circle cx="14.6" cy="15.7" r="2.1"/><circle cx="9.4" cy="15.7" r="2.1"/><circle cx="7.7" cy="10.3" r="2.1"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 24 24"><path d="M7 4.5h10L20 9l-8 10.5L4 9l3-4.5z"/><path d="M4 9h16"/><path d="M9.5 9 12 19.5 14.5 9"/></symbol>
+    <symbol id="i-polish" viewBox="0 0 24 24"><path d="M9.5 3h5v3.2h-5z"/><path d="M12 6.2v2.3"/><path d="M7 10.5h10l1.1 8.6a2 2 0 0 1-2 2.4H7.9a2 2 0 0 1-2-2.4l1.1-8.6z"/><path d="M9.5 14c.8 1 1.5 2 1.5 3.2"/></symbol>
+    <symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 3.5s5.5 6 5.5 10a5.5 5.5 0 1 1-11 0c0-4 5.5-10 5.5-10z"/><path d="M9.5 13.5a2.6 2.6 0 0 0 2 2.6"/></symbol>
+    <symbol id="i-nails" viewBox="0 0 24 24"><rect x="6.2" y="9.5" width="3.3" height="10.5" rx="1.65"/><rect x="10.4" y="6" width="3.3" height="14" rx="1.65"/><rect x="14.6" y="9.5" width="3.3" height="10.5" rx="1.65"/></symbol>
+    <symbol id="i-brush" viewBox="0 0 24 24"><path d="M4 20c2.5.2 4.5-.5 5.8-2.2L18 9.6 14.4 6 6.2 14.2C4.5 15.5 3.5 17.5 4 20z"/><path d="M13 7l3 3"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 10 11 4.5 19.5 4.5 19.5 13 14 19 5 19z"/><path d="M5 19c3-4 6-7 10-10"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="M4.5 17.5h15"/><path d="M5.5 17.5 4 8.5l4.2 3.4L12 5.5l3.8 6.4L20 8.5l-1.5 9z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19.5c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="16.5" cy="9" r="2.4"/><path d="M15.6 14.6c2.5.2 4.2 1.7 4.9 4.4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5 5 6v5.5c0 4.5 3 7.7 7 9 4-1.3 7-4.5 7-9V6l-7-2.5z"/><path d="M9 11.5l2.2 2.2L15.5 9.5"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9.5" r="4.5"/><path d="M10 13 8.5 20l3.5-2 3.5 2L14 13"/></symbol>
+    <symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="10" r="5"/><path d="M9.5 14.5 8 21l4-2.2L16 21l-1.5-6.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.8l2.6 5.4 5.9.8-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8L3.5 10l5.9-.8L12 3.8z"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M9.5 6C7 7.5 5.5 9.8 5.5 13c0 2.5 1.5 4 3.5 4 1.7 0 3-1.2 3-2.9 0-1.6-1.1-2.7-2.7-2.7-.3 0-.6 0-.8.1.3-2 1.8-3.7 3.8-4.7L9.5 6z"/><path d="M17 6c-2.5 1.5-4 3.8-4 7 0 2.5 1.5 4 3.5 4 1.7 0 3-1.2 3-2.9 0-1.6-1.1-2.7-2.7-2.7-.3 0-.6 0-.8.1.3-2 1.8-3.7 3.8-4.7L17 6z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="M4.5 7.5 12 13l7.5-5.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2z"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="15" rx="2.5"/><path d="M4 10.5h16"/><path d="M8.5 3.5v4M15.5 3.5v4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M20 12H5"/><path d="M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-waves" viewBox="0 0 24 24"><path d="M4 9c2.5-2.5 5-2.5 8 0s5.5 2.5 8 0"/><path d="M4 15c2.5-2.5 5-2.5 8 0s5.5 2.5 8 0"/></symbol>
+  </svg>
+
+  <!-- ==================== [ الترويسة ] ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Luna Nail Studio - الرئيسية">
+        <span class="brand-mark">
+          <svg class="icon"><use href="#i-moon"/></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Luna Nail Studio</span>
+          <span class="brand-sub">لونا نيل ستوديو</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="التنقل الرئيسي">
+        <a href="#home" class="nav-link active">الرئيسية</a>
+        <a href="#about" class="nav-link">من نحن</a>
+        <a href="#services" class="nav-link">خدماتنا</a>
+        <a href="#gallery" class="nav-link">أعمالنا</a>
+        <a href="#why" class="nav-link">لماذا نحن</a>
+        <a href="#reviews" class="nav-link">آراء العملاء</a>
+        <a href="#contact" class="nav-link">تواصلي</a>
+        <a href="#booking" class="btn btn-primary btn-nav">احجزي موعدك</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#booking" class="btn btn-primary btn-cta">احجزي موعدك</a>
+        <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== [ الصفحة الرئيسية - Hero ] ==================== -->
+    <section class="hero" id="home">
+      <div class="hero-blob blob-1" aria-hidden="true"></div>
+      <div class="hero-blob blob-2" aria-hidden="true"></div>
+      <div class="hero-blob blob-3" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge reveal">
+            <svg class="icon"><use href="#i-sparkle"/></svg>
+            استوديو فاخر للعناية بالأظافر
+          </span>
+          <h1 class="hero-title reveal">
+            لأن جمالك يبدأ من <span class="text-grad">التفاصيل</span>
+          </h1>
+          <p class="hero-desc reveal">
+            استوديو متخصص في العناية بالأظافر وتصميمها بأحدث الأساليب العصرية لمنحك إطلالة أنيقة وفريدة.
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#booking" class="btn btn-primary btn-lg">
+              احجزي موعدك
+              <svg class="icon"><use href="#i-arrow"/></svg>
+            </a>
+            <a href="#gallery" class="btn btn-ghost btn-lg">استعرضي أعمالنا</a>
+          </div>
+          <div class="hero-trust reveal">
+            <span class="stars" aria-label="تقييم 4.9 من 5">
+              <svg class="icon"><use href="#i-star"/></svg>
+              <svg class="icon"><use href="#i-star"/></svg>
+              <svg class="icon"><use href="#i-star"/></svg>
+              <svg class="icon"><use href="#i-star"/></svg>
+              <svg class="icon"><use href="#i-star"/></svg>
+            </span>
+            <span class="trust-text">4.9 — أكثر من 500 عميلة سعيدة</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="hv-ring"></div>
+          <div class="hv-card hv-main">
+            <svg class="icon hv-moon"><use href="#i-moon"/></svg>
+            <span class="hv-brand">Luna</span>
+            <span class="hv-brand-sub">Nail Studio</span>
+          </div>
+          <div class="hv-card hv-mini hv-mini--1">
+            <svg class="icon"><use href="#i-polish"/></svg>
+          </div>
+          <div class="hv-card hv-mini hv-mini--2">
+            <svg class="icon"><use href="#i-gem"/></svg>
+          </div>
+          <div class="hv-card hv-mini hv-mini--3">
+            <svg class="icon"><use href="#i-flower"/></svg>
+          </div>
+          <span class="hv-sparkle sp-1"><svg class="icon"><use href="#i-sparkle"/></svg></span>
+          <span class="hv-sparkle sp-2"><svg class="icon"><use href="#i-sparkle"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== [ من نحن ] ==================== -->
+    <section class="section section--white" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="about-frame">
+            <div class="about-art about-art--2"></div>
+            <div class="about-photo about-photo--1">
+              <img src="gallery/about-1.jpg" alt="تصميم أظافر من أعمالنا" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+            <div class="about-photo about-photo--2">
+              <img src="gallery/about-2.jpg" alt="تصميم أظافر من أعمالنا" loading="lazy" onerror="this.style.opacity='0'">
+            </div>
+          </div>
+          <div class="about-float-group">
+            <div class="about-badge">
+              <span class="about-badge-num">5+</span>
+              <span class="about-badge-txt">سنوات من<br>الخبرة والفخامة</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="kicker reveal">من نحن</span>
+          <h2 class="section-title reveal">استوديو يُدار بشغفٍ وذوقٍ رفيع</h2>
+          <p class="section-desc reveal">
+            في Luna Nail Studio نقدم خدمات احترافية للعناية بالأظافر باستخدام منتجات عالية الجودة وأحدث تقنيات الجمال لنمنح كل عميلة تجربة راقية ومميزة.
+          </p>
+          <ul class="about-points">
+            <li class="reveal">
+              <span class="point-icon"><svg class="icon"><use href="#i-check"/></svg></span>
+              أجواء مريحة تبعث الهدوء والأناقة
+            </li>
+            <li class="reveal">
+              <span class="point-icon"><svg class="icon"><use href="#i-check"/></svg></span>
+              فريق نسائي محترف ومتخصص
+            </li>
+            <li class="reveal">
+              <span class="point-icon"><svg class="icon"><use href="#i-check"/></svg></span>
+              مواعيد مرنة تناسب أسلوب حياتك
+            </li>
+          </ul>
+          <div class="about-stats reveal">
+            <div class="stat"><span class="stat-num" data-count="500">0</span><span class="stat-plus">+</span><span class="stat-label">عميلة سعيدة</span></div>
+            <div class="stat"><span class="stat-num" data-count="2000">0</span><span class="stat-plus">+</span><span class="stat-label">تصميم مُنجز</span></div>
+            <div class="stat"><span class="stat-num" data-count="15">0</span><span class="stat-plus">+</span><span class="stat-label">أسلوب فني</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== [ خدماتنا ] ==================== -->
+    <section class="section section--cream" id="services">
+      <div class="container">
+        <div class="section-head center">
+          <span class="kicker reveal">خدماتنا</span>
+          <h2 class="section-title reveal">لمساتٌ تُبرز جمالك</h2>
+          <p class="section-desc reveal">مجموعة متكاملة من خدمات العناية والتصميم، كلها مصممة لتمنحك تجربة استثنائية.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="service-icon"><svg class="icon"><use href="#i-polish"/></svg></span>
+            <h3>المناكير الكلاسيكي</h3>
+            <p>تنظيف وترتيب الأظافر مع تطبيق الطلاء الاحترافي.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon"><svg class="icon"><use href="#i-droplet"/></svg></span>
+            <h3>جل بوليش</h3>
+            <p>ألوان تدوم طويلاً بلمعان مثالي.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon"><svg class="icon"><use href="#i-nails"/></svg></span>
+            <h3>تركيب الأظافر</h3>
+            <p>أظافر جيل وأكريليك بمختلف الأشكال والأطوال.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon"><svg class="icon"><use href="#i-brush"/></svg></span>
+            <h3>فن الأظافر</h3>
+            <p>رسومات وتصاميم مخصصة حسب الطلب.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon"><svg class="icon"><use href="#i-gem"/></svg></span>
+            <h3>التصميم الفاخر</h3>
+            <p>إضافة الأحجار والزخارف والإكسسوارات للأظافر.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon"><svg class="icon"><use href="#i-leaf"/></svg></span>
+            <h3>العناية باليدين</h3>
+            <p>ترطيب وتقشير وعناية متكاملة.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon"><svg class="icon"><use href="#i-crown"/></svg></span>
+            <h3>باقة العرائس</h3>
+            <p>تصاميم خاصة للمناسبات والأعراس.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon"><svg class="icon"><use href="#i-users"/></svg></span>
+            <h3>باقة الصديقات</h3>
+            <p>عروض جماعية بأسعار مميزة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== [ معرض الأعمال ] ==================== -->
+    <section class="section section--white" id="gallery">
+      <div class="container">
+        <div class="section-head center">
+          <span class="kicker reveal">معرض الأعمال</span>
+          <h2 class="section-title reveal">أعمالٌ تُلهم الأناقة</h2>
+          <p class="section-desc reveal">تصفحي نماذج متنوعة من تصاميمنا واختاري ما يعبّر عن أسلوبك.</p>
+        </div>
+
+        <div class="filter-bar reveal" role="group" aria-label="تصفية الأعمال">
+          <button class="filter-btn active" data-filter="all">الكل</button>
+          <button class="filter-btn" data-filter="classic">كلاسيكي</button>
+          <button class="filter-btn" data-filter="soft">ناعم</button>
+          <button class="filter-btn" data-filter="modern">عصري</button>
+          <button class="filter-btn" data-filter="luxury">فاخر</button>
+        </div>
+
+        <div class="works-grid" id="worksGrid">
+          <figure class="work-card reveal" data-cat="classic">
+            <div class="work-art art-1">
+              <img src="gallery/work-1.jpg" alt="تصميم أظافر أحمر كلاسيكي" loading="lazy" onerror="this.remove()">
+              <svg class="icon"><use href="#i-polish"/></svg>
+            </div>
+            <figcaption><span class="work-cat">كلاسيكي</span><span class="work-name">أحمر كلاسيكي</span></figcaption>
+          </figure>
+          <figure class="work-card reveal" data-cat="classic">
+            <div class="work-art art-2">
+              <img src="gallery/work-2.jpg" alt="تصميم أظافر فرنش أنيق" loading="lazy" onerror="this.remove()">
+              <svg class="icon"><use href="#i-waves"/></svg>
+            </div>
+            <figcaption><span class="work-cat">كلاسيكي</span><span class="work-name">فرنش أنيق</span></figcaption>
+          </figure>
+          <figure class="work-card reveal" data-cat="soft">
+            <div class="work-art art-3">
+              <img src="gallery/work-3.jpg" alt="تصميم أظافر بتدرج وردي ناعم" loading="lazy" onerror="this.remove()">
+              <svg class="icon"><use href="#i-heart"/></svg>
+            </div>
+            <figcaption><span class="work-cat">ناعم</span><span class="work-name">تدرج وردي</span></figcaption>
+          </figure>
+          <figure class="work-card reveal" data-cat="soft">
+            <div class="work-art art-4">
+              <img src="gallery/work-4.jpg" alt="تصميم أظافر ميلك هازل بزهرة" loading="lazy" onerror="this.remove()">
+              <svg class="icon"><use href="#i-flower"/></svg>
+            </div>
+            <figcaption><span class="work-cat">ناعم</span><span class="work-name">ميلك هازل</span></figcaption>
+          </figure>
+          <figure class="work-card reveal" data-cat="modern">
+            <div class="work-art art-5">
+              <img src="gallery/work-5.jpg" alt="تصميم أظافر نيود ميتاليك عصري" loading="lazy" onerror="this.remove()">
+              <svg class="icon"><use href="#i-sparkle"/></svg>
+            </div>
+            <figcaption><span class="work-cat">عصري</span><span class="work-name">نيود ميتاليك</span></figcaption>
+          </figure>
+          <figure class="work-card reveal" data-cat="modern">
+            <div class="work-art art-6">
+              <img src="gallery/work-6.jpg" alt="تصميم أظافر بخطوط قمرية عصرية" loading="lazy" onerror="this.remove()">
+              <svg class="icon"><use href="#i-moon"/></svg>
+            </div>
+            <figcaption><span class="work-cat">عصري</span><span class="work-name">خطوط قمرية</span></figcaption>
+          </figure>
+          <figure class="work-card reveal" data-cat="luxury">
+            <div class="work-art art-7">
+              <img src="gallery/work-7.jpg" alt="تصميم أظافر خمري مرصع بالأحجار" loading="lazy" onerror="this.remove()">
+              <svg class="icon"><use href="#i-gem"/></svg>
+            </div>
+            <figcaption><span class="work-cat">فاخر</span><span class="work-name">خمري مرصّع</span></figcaption>
+          </figure>
+          <figure class="work-card reveal" data-cat="luxury">
+            <div class="work-art art-8">
+              <img src="gallery/work-8.jpg" alt="تصميم أظافر فاخر ليلة العيد" loading="lazy" onerror="this.remove()">
+              <svg class="icon"><use href="#i-crown"/></svg>
+            </div>
+            <figcaption><span class="work-cat">فاخر</span><span class="work-name">ليلة العيد</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== [ لماذا نحن ] ==================== -->
+    <section class="section section--cream" id="why">
+      <div class="container">
+        <div class="section-head center">
+          <span class="kicker reveal">لماذا نحن</span>
+          <h2 class="section-title reveal">تجربة تستحقّها كل عميلة</h2>
+          <p class="section-desc reveal">نحرص على كل تفصيلة صغيرة لتكون زيارتك استثنائية في كل مرة.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-item reveal">
+            <span class="why-icon"><svg class="icon"><use href="#i-award"/></svg></span>
+            <h3>جودة عالية</h3>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon"><svg class="icon"><use href="#i-shield"/></svg></span>
+            <h3>أدوات معقمة</h3>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon"><svg class="icon"><use href="#i-leaf"/></svg></span>
+            <h3>منتجات آمنة</h3>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon"><svg class="icon"><use href="#i-sparkle"/></svg></span>
+            <h3>تصاميم حديثة</h3>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon"><svg class="icon"><use href="#i-medal"/></svg></span>
+            <h3>خبرة واحترافية</h3>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon"><svg class="icon"><use href="#i-heart"/></svg></span>
+            <h3>خدمة مميزة</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== [ آراء العملاء ] ==================== -->
+    <section class="section section--white" id="reviews">
+      <div class="container">
+        <div class="section-head center">
+          <span class="kicker reveal">آراء العملاء</span>
+          <h2 class="section-title reveal">كلامٌ يُشبه ابتسامتهنّ</h2>
+        </div>
+
+        <div class="t-slider reveal" dir="ltr" id="tSlider">
+          <div class="t-track" id="tTrack">
+            <figure class="t-card" dir="rtl">
+              <svg class="icon t-quote"><use href="#i-quote"/></svg>
+              <div class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div>
+              <blockquote>أفضل تجربة حصلت عليها.</blockquote>
+              <figcaption>— عميلة Luna</figcaption>
+            </figure>
+            <figure class="t-card" dir="rtl">
+              <svg class="icon t-quote"><use href="#i-quote"/></svg>
+              <div class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div>
+              <blockquote>تصاميم جميلة وخدمة ممتازة.</blockquote>
+              <figcaption>— عميلة Luna</figcaption>
+            </figure>
+            <figure class="t-card" dir="rtl">
+              <svg class="icon t-quote"><use href="#i-quote"/></svg>
+              <div class="stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></div>
+              <blockquote>النتيجة كانت أجمل مما توقعت.</blockquote>
+              <figcaption>— عميلة Luna</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="t-controls reveal">
+          <button class="t-arrow" id="tPrev" aria-label="السابق"><svg class="icon"><use href="#i-arrow"/></svg></button>
+          <div class="t-dots" id="tDots" role="tablist" aria-label="التنقل بين الآراء"></div>
+          <button class="t-arrow" id="tNext" aria-label="التالي"><svg class="icon"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== [ الحجز ] ==================== -->
+    <section class="section section--booking" id="booking">
+      <div class="booking-deco" aria-hidden="true"></div>
+      <div class="container">
+        <div class="booking-grid">
+          <div class="booking-info">
+            <span class="kicker kicker--light reveal">الحجز</span>
+            <h2 class="section-title reveal">احجزي موعدك بسهولة</h2>
+            <p class="section-desc section-desc--light reveal">
+              عبّئي البيانات وسنتواصل معكِ لتأكيد الموعد. أماكننا محدودة لضمان جودة الخدمة لكل عميلة.
+            </p>
+            <ul class="booking-points">
+              <li class="reveal"><svg class="icon"><use href="#i-clock"/></svg> السبت – الخميس: 10 صباحاً إلى 9 مساءً</li>
+              <li class="reveal"><svg class="icon"><use href="#i-check"/></svg> تأكيد فوري خلال دقائق</li>
+              <li class="reveal"><svg class="icon"><use href="#i-heart"/></svg> إلغاء مجاني قبل 24 ساعة</li>
+            </ul>
+          </div>
+
+          <div class="booking-card reveal">
+            <form id="bookingForm" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="fName">الاسم</label>
+                  <input type="text" id="fName" name="name" placeholder="ادخلي اسمكِ الكريم" autocomplete="name">
+                  <span class="field-error" id="eName"></span>
+                </div>
+                <div class="field">
+                  <label for="fPhone">رقم الجوال</label>
+                  <input type="tel" id="fPhone" name="phone" dir="ltr" placeholder="05X XXX XXXX" autocomplete="tel">
+                  <span class="field-error" id="ePhone"></span>
+                </div>
+                <div class="field">
+                  <label for="fService">الخدمة المطلوبة</label>
+                  <select id="fService" name="service">
+                    <option value="" selected disabled>اختاري الخدمة</option>
+                    <option>المناكير الكلاسيكي</option>
+                    <option>جل بوليش</option>
+                    <option>تركيب الأظافر</option>
+                    <option>فن الأظافر</option>
+                    <option>التصميم الفاخر</option>
+                    <option>العناية باليدين</option>
+                    <option>باقة العرائس</option>
+                    <option>باقة الصديقات</option>
+                  </select>
+                  <span class="field-error" id="eService"></span>
+                </div>
+                <div class="field">
+                  <label for="fDate">التاريخ</label>
+                  <input type="date" id="fDate" name="date">
+                  <span class="field-error" id="eDate"></span>
+                </div>
+                <div class="field field--full">
+                  <label for="fTime">الوقت</label>
+                  <select id="fTime" name="time">
+                    <option value="" selected disabled>اختاري الوقت المناسب</option>
+                    <option>10:00 صباحاً</option>
+                    <option>11:00 صباحاً</option>
+                    <option>12:00 ظهراً</option>
+                    <option>01:00 بعد الظهر</option>
+                    <option>02:00 بعد الظهر</option>
+                    <option>03:00 بعد الظهر</option>
+                    <option>04:00 بعد الظهر</option>
+                    <option>05:00 بعد الظهر</option>
+                    <option>06:00 مساءً</option>
+                    <option>07:00 مساءً</option>
+                    <option>08:00 مساءً</option>
+                  </select>
+                  <span class="field-error" id="eTime"></span>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg btn-submit">
+                تأكيد الحجز
+                <svg class="icon"><use href="#i-check"/></svg>
+              </button>
+            </form>
+
+            <div class="booking-success" id="bookingSuccess" hidden>
+              <span class="success-icon"><svg class="icon"><use href="#i-check"/></svg></span>
+              <h3>تم استلام طلب حجزكِ</h3>
+              <p>شكراً لكِ <strong id="successName"></strong>! سنتواصل معكِ قريباً لتأكيد الموعد.</p>
+              <div class="success-meta" id="successMeta"></div>
+              <span class="success-ref">رقم الحجز: <strong id="successRef"></strong></span>
+              <button class="btn btn-ghost" id="newBooking">حجز موعد آخر</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== [ التواصل ] ==================== -->
+    <section class="section section--cream" id="contact">
+      <div class="container">
+        <div class="section-head center">
+          <span class="kicker reveal">تواصلي</span>
+          <h2 class="section-title reveal">نحن هنا لخدمتكِ</h2>
+          <p class="section-desc reveal">تواصلي معنا عبر أي قناة، وسنكون سعداء بالرد عليكِ.</p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card reveal" href="https://instagram.com/luna.nails" target="_blank" rel="noopener">
+            <span class="contact-icon"><svg class="icon"><use href="#i-insta"/></svg></span>
+            <h3>انستغرام</h3>
+            <span class="contact-value" dir="ltr">@luna.nails</span>
+            <span class="contact-hint">تابعي أحدث التصاميم</span>
+          </a>
+          <a class="contact-card reveal" href="mailto:info@lunanails.com">
+            <span class="contact-icon"><svg class="icon"><use href="#i-mail"/></svg></span>
+            <h3>البريد الإلكتروني</h3>
+            <span class="contact-value" dir="ltr">info@lunanails.com</span>
+            <span class="contact-hint">للاستفسارات والحجوزات</span>
+          </a>
+          <a class="contact-card reveal" href="tel:+966568840166">
+            <span class="contact-icon"><svg class="icon"><use href="#i-phone"/></svg></span>
+            <h3>رقم التواصل</h3>
+            <span class="contact-value" dir="ltr">056 884 0166</span>
+            <span class="contact-hint">اتصلي أو راسلينا واتساب</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== [ التذييل ] ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand brand--light">
+          <span class="brand-mark"><svg class="icon"><use href="#i-moon"/></svg></span>
+          <span class="brand-text">
+            <span class="brand-name">Luna Nail Studio</span>
+            <span class="brand-sub">لونا نيل ستوديو</span>
+          </span>
+        </a>
+        <p>استوديو متخصص في العناية بالأظافر وتصميمها بأحدث الأساليب العصرية لمنحكِ إطلالة أنيقة وفريدة.</p>
+      </div>
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <a href="#about">من نحن</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#gallery">أعمالنا</a>
+        <a href="#booking">احجزي موعدك</a>
+      </div>
+      <div class="footer-col">
+        <h4>خدماتنا</h4>
+        <span>المناكير الكلاسيكي</span>
+        <span>جل بوليش</span>
+        <span>تركيب الأظافر</span>
+        <span>باقة العرائس</span>
+      </div>
+      <div class="footer-col">
+        <h4>تواصلي</h4>
+        <a href="https://instagram.com/luna.nails" target="_blank" rel="noopener" dir="ltr">@luna.nails</a>
+        <a href="mailto:info@lunanails.com" dir="ltr">info@lunanails.com</a>
+        <a href="tel:+966568840166" dir="ltr">056 884 0166</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>جميع الحقوق محفوظة © <span id="year">Luna Nail Studio</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر العودة للأعلى -->
+  <button class="to-top" id="toTop" aria-label="العودة إلى الأعلى">
+    <svg class="icon"><use href="#i-up"/></svg>
+  </button>
+
+  <!-- تنبيه منبثق -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
